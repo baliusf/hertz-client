@@ -9,10 +9,10 @@
 import Foundation
 
 class Vehicle {
-  var year = "2010"
-  var make = "Audi series"
-  var model = ""
-  var image = ""
+  var year = "2019"
+  var make = "Chevrolet"
+  var model = "Camaro"
+  var image = "Camaro"
   
   init() {
   }

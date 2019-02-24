@@ -15,10 +15,7 @@ class VehicleTableViewCell: UITableViewCell {
   @IBOutlet weak var nameLabel: UILabel!
   
   func configureCellWithVehicle(_ vehicle: Vehicle) {
-    if let url = URL(string: vehicle.image) {
-      vehicleImageView.sd_setImage(with: url, completed: nil)
-    }
-    
+    vehicleImageView.image = UIImage(named: vehicle.image)
     yearLabel.text = vehicle.year
     nameLabel.text = vehicle.model
   }
