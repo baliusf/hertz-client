@@ -27,22 +27,33 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhC-kH-u3I">
-                        <rect key="frame" x="95" y="34" width="215" height="21.5"/>
+                        <rect key="frame" x="95" y="22" width="215" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking no" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks8-st-AZe">
+                        <rect key="frame" x="95" y="53" width="215" height="21.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="Q9O-kf-ose" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6rT-gq-DoI"/>
                     <constraint firstAttribute="trailing" secondItem="XhC-kH-u3I" secondAttribute="trailing" constant="10" id="Fqb-yE-jcw"/>
+                    <constraint firstItem="ks8-st-AZe" firstAttribute="trailing" secondItem="XhC-kH-u3I" secondAttribute="trailing" id="HZd-PR-X4d"/>
                     <constraint firstItem="Q9O-kf-ose" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="R7z-gd-La0"/>
+                    <constraint firstItem="ks8-st-AZe" firstAttribute="top" secondItem="XhC-kH-u3I" secondAttribute="bottom" constant="9.5" id="Sup-hB-hVa"/>
+                    <constraint firstItem="ks8-st-AZe" firstAttribute="leading" secondItem="XhC-kH-u3I" secondAttribute="leading" id="Uk8-nJ-Yev"/>
                     <constraint firstItem="XhC-kH-u3I" firstAttribute="leading" secondItem="Q9O-kf-ose" secondAttribute="trailing" constant="10" id="kzi-pO-Gyk"/>
-                    <constraint firstItem="XhC-kH-u3I" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nh3-eU-D60"/>
+                    <constraint firstItem="XhC-kH-u3I" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-12" id="nh3-eU-D60"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="bookingLabel" destination="ks8-st-AZe" id="nAT-ae-tAg"/>
                 <outlet property="nameLabel" destination="XhC-kH-u3I" id="aPT-Zr-b0I"/>
                 <outlet property="userImageView" destination="Q9O-kf-ose" id="72F-rS-gdK"/>
             </connections>

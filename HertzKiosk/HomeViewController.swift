@@ -47,9 +47,12 @@ class HomeViewController: UIViewController {
     
     let bookingNib = UINib(nibName: "BookingTableViewCell", bundle: nil)
     tableView.register(bookingNib, forCellReuseIdentifier: "BookingTableViewCell")
+    
+    let lockNib = UINib(nibName: "LockTableViewCell", bundle: nil)
+    tableView.register(lockNib, forCellReuseIdentifier: "LockTableViewCell")
   }
   
-  @objc private func switchTapped(_ lockSwitch: UISwitch) {
+  @objc private func switchTapped(_ isOn: Bool) {
     if isLocked {
 //      let alert = UIAlertController(title: "Warning", message: "You are about to unlock your vehicle. Do you wish to continue?", preferredStyle: .alert)
 //      alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
@@ -89,7 +92,7 @@ extension HomeViewController: UITableViewDataSource {
     switch sections[indexPath.section] {
     case .user:
       let cell = tableView.dequeueReusableCell(withIdentifier: "UserTableViewCell") as! UserTableViewCell
-      cell.configureCellWithUser(booking.user)
+      cell.configureCellWithUser(booking.user, booking: booking)
       return cell
       
     case .vehicle:
@@ -103,21 +106,10 @@ extension HomeViewController: UITableViewDataSource {
       return cell
       
     default:
-      let lockCellIdentifier = "lockCellIdentifier"
-      var cell = tableView.dequeueReusableCell(withIdentifier: lockCellIdentifier)
-      if cell == nil {
-        cell = UITableViewCell(style: .default, reuseIdentifier: lockCellIdentifier)
-      }
-      
-      cell?.textLabel?.text = "Lock vehicle"
-      
-      let lockSwitch = UISwitch(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-      lockSwitch.isOn = isLocked
-      lockSwitch.removeTarget(self, action: #selector(switchTapped(_ :)), for: .valueChanged)
-      lockSwitch.addTarget(self, action: #selector(switchTapped(_ :)), for: .valueChanged)
-      cell?.accessoryView = lockSwitch
-      
-      return cell!
+      let cell = tableView.dequeueReusableCell(withIdentifier: "LockTableViewCell") as! LockTableViewCell
+      cell.lockSwitch.isOn = isLocked
+      cell.delegate = self
+      return cell
     }
   }
 }
@@ -129,13 +121,19 @@ extension HomeViewController: UITableViewDelegate {
       return 85
       
     case .vehicle:
-      return 200
+      return 150
       
     case .booking:
       return 100
       
     default:
-      return 44
+      return 80
     }
+  }
+}
+
+extension HomeViewController: LockTableViewCellDelegate {
+  func didTapOnLockSwitch(_ lockSwitchIsOn: Bool) {
+    switchTapped(lockSwitchIsOn)
   }
 }

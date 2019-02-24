@@ -11,16 +11,16 @@ import UIKit
 class BookingTableViewCell: UITableViewCell {
   
   @IBOutlet weak var pickupLocHeaderLabel: UILabel!
-  @IBOutlet weak var pickupLocValueLabel: UILabel!
   @IBOutlet weak var pickupTimeHeaderLabel: UILabel!
-  @IBOutlet weak var pickupTimeValueLabel: UILabel!
 
   func configureCellWithBooking(_ booking: Booking) {
-    pickupLocHeaderLabel.text = "Pick up location"
-    pickupLocValueLabel.text = "Tampa"
-    
-    pickupTimeHeaderLabel.text = "Pick up time"
-    pickupTimeValueLabel.text = "booking.startDate"
+    pickupLocHeaderLabel.text = "Pickup location: Tampa"
+    pickupTimeHeaderLabel.text = "Pickup time: \(dateToString(date: booking.startDate))"
   }
-    
+  
+  private func dateToString(date: Date) -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "MMM dd, yyyy hh:mm Z"
+    return dateFormatter.string(from: date)
+  }
 }

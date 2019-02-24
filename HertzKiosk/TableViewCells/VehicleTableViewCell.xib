@@ -20,33 +20,35 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C29-fl-frl">
-                        <rect key="frame" x="8" y="34.5" width="240" height="128"/>
+                        <rect key="frame" x="8" y="29.5" width="170" height="136"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="240" id="EWl-91-UFy"/>
-                            <constraint firstAttribute="height" constant="128" id="sp5-1i-rCk"/>
+                            <constraint firstAttribute="width" secondItem="C29-fl-frl" secondAttribute="height" multiplier="5:4" id="Lsm-Ob-hHg"/>
+                            <constraint firstAttribute="width" constant="170" id="hG8-Rd-eu1"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFb-ry-Pif">
-                        <rect key="frame" x="8" y="6" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDg-D6-GLL">
+                        <rect key="frame" x="188" y="58.5" width="124" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDg-D6-GLL">
-                        <rect key="frame" x="55" y="6" width="259" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFb-ry-Pif">
+                        <rect key="frame" x="188" y="29.5" width="124" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" red="0.50196078430000002" green="0.50980392159999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="cDg-D6-GLL" secondAttribute="trailing" constant="6" id="1m6-qY-Fpt"/>
-                    <constraint firstItem="vFb-ry-Pif" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="2MT-24-bhQ"/>
-                    <constraint firstItem="C29-fl-frl" firstAttribute="top" secondItem="cDg-D6-GLL" secondAttribute="bottom" constant="8" id="9hz-ot-6dw"/>
-                    <constraint firstItem="C29-fl-frl" firstAttribute="leading" secondItem="vFb-ry-Pif" secondAttribute="leading" id="FfE-XJ-Gks"/>
-                    <constraint firstItem="cDg-D6-GLL" firstAttribute="top" secondItem="vFb-ry-Pif" secondAttribute="top" id="VZ2-BK-enw"/>
-                    <constraint firstItem="cDg-D6-GLL" firstAttribute="leading" secondItem="vFb-ry-Pif" secondAttribute="trailing" constant="5" id="hX0-N9-nX8"/>
-                    <constraint firstItem="vFb-ry-Pif" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="iHR-UX-CpL"/>
+                    <constraint firstItem="cDg-D6-GLL" firstAttribute="trailing" secondItem="vFb-ry-Pif" secondAttribute="trailing" id="25p-Fp-1Ca"/>
+                    <constraint firstItem="C29-fl-frl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="EPd-oP-U6D"/>
+                    <constraint firstItem="cDg-D6-GLL" firstAttribute="top" secondItem="vFb-ry-Pif" secondAttribute="bottom" constant="8" id="SA5-z2-UZu"/>
+                    <constraint firstAttribute="trailing" secondItem="vFb-ry-Pif" secondAttribute="trailing" constant="8" id="gnT-gR-FOb"/>
+                    <constraint firstItem="C29-fl-frl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iRs-wq-q1x"/>
+                    <constraint firstItem="vFb-ry-Pif" firstAttribute="top" secondItem="C29-fl-frl" secondAttribute="top" id="mMP-cG-NNX"/>
+                    <constraint firstItem="cDg-D6-GLL" firstAttribute="leading" secondItem="vFb-ry-Pif" secondAttribute="leading" id="uyK-W4-Kff"/>
+                    <constraint firstItem="vFb-ry-Pif" firstAttribute="leading" secondItem="C29-fl-frl" secondAttribute="trailing" constant="10" id="y6p-B1-tbp"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
