@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		274D9771220DEF65005AC830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274D9770220DEF65005AC830 /* AppDelegate.swift */; };
+		274D9776220DEF65005AC830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274D9774220DEF65005AC830 /* Main.storyboard */; };
+		274D9778220DEF67005AC830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274D9777220DEF67005AC830 /* Assets.xcassets */; };
+		274D977B220DEF67005AC830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274D9779220DEF67005AC830 /* LaunchScreen.storyboard */; };
+		274D9790220E1B05005AC830 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274D978F220E1B05005AC830 /* SplashViewController.swift */; };
+		274D9792220E1BDC005AC830 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274D9791220E1BDC005AC830 /* LoginViewController.swift */; };
+		274D9793220E1F10005AC830 /* Ride-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 274D9783220DEFCA005AC830 /* Ride-Bold.ttf */; };
+		274D9794220E1F13005AC830 /* Ride-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 274D9784220DEFD0005AC830 /* Ride-BoldItalic.otf */; };
+		274D9795220E1F16005AC830 /* Ride-Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 274D9785220DEFD6005AC830 /* Ride-Extrabold.otf */; };
+		274D9796220E1F18005AC830 /* Ride-ExtraboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 274D9786220DEFDC005AC830 /* Ride-ExtraboldItalic.ttf */; };
+		274D9797220E1F1B005AC830 /* Ride-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 274D9787220DEFE3005AC830 /* Ride-Italic.otf */; };
+		274D9798220E1F1E005AC830 /* Ride-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 274D9788220DEFE8005AC830 /* Ride-Light.ttf */; };
+		274D9799220E1F20005AC830 /* Ride-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 274D9789220DEFF0005AC830 /* Ride-LightItalic.otf */; };
+		274D979A220E1F23005AC830 /* Ride-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 274D978A220DF012005AC830 /* Ride-Regular.otf */; };
+		274D979B220E1F25005AC830 /* Ride-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 274D978B220DF019005AC830 /* Ride-SemiBold.ttf */; };
+		274D979C220E1F28005AC830 /* Ride-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 274D978C220DF01D005AC830 /* Ride-SemiBoldItalic.ttf */; };
+		274D97A0220E2607005AC830 /* BlankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274D979F220E2607005AC830 /* BlankViewController.swift */; };
+		27DA50EB221DE38F000BB667 /* VehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DA50EA221DE38F000BB667 /* VehiclesViewController.swift */; };
+		27DA50ED221DE60E000BB667 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DA50EC221DE60E000BB667 /* Vehicle.swift */; };
+		29C56EEE2221F53B00556179 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C56EED2221F53B00556179 /* User.swift */; };
+		29C56EF22221F57500556179 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C56EF12221F57500556179 /* Booking.swift */; };
+		29C56EF6222206E400556179 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C56EF5222206E400556179 /* HomeViewController.swift */; };
+		29C56EF92222096A00556179 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C56EF72222096A00556179 /* UserTableViewCell.swift */; };
+		29C56EFA2222096A00556179 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C56EF82222096A00556179 /* UserTableViewCell.xib */; };
+		29C56F00222209A300556179 /* VehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C56EFE222209A300556179 /* VehicleTableViewCell.swift */; };
+		29C56F01222209A300556179 /* VehicleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C56EFF222209A300556179 /* VehicleTableViewCell.xib */; };
+		29C56F0C2222393200556179 /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C56F0A2222393200556179 /* BookingTableViewCell.swift */; };
+		29C56F0D2222393200556179 /* BookingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C56F0B2222393200556179 /* BookingTableViewCell.xib */; };
+		73BF8C7EE4DC876C6BE63C79 /* Pods_HertzKiosk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B780B243500AB99B517140A /* Pods_HertzKiosk.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		274D976D220DEF65005AC830 /* HertzKiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HertzKiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		274D9770220DEF65005AC830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		274D9775220DEF65005AC830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		274D9777220DEF67005AC830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		274D977A220DEF67005AC830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		274D977C220DEF67005AC830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		274D9783220DEFCA005AC830 /* Ride-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ride-Bold.ttf"; sourceTree = "<group>"; };
+		274D9784220DEFD0005AC830 /* Ride-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ride-BoldItalic.otf"; sourceTree = "<group>"; };
+		274D9785220DEFD6005AC830 /* Ride-Extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ride-Extrabold.otf"; sourceTree = "<group>"; };
+		274D9786220DEFDC005AC830 /* Ride-ExtraboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ride-ExtraboldItalic.ttf"; sourceTree = "<group>"; };
+		274D9787220DEFE3005AC830 /* Ride-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ride-Italic.otf"; sourceTree = "<group>"; };
+		274D9788220DEFE8005AC830 /* Ride-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ride-Light.ttf"; sourceTree = "<group>"; };
+		274D9789220DEFF0005AC830 /* Ride-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ride-LightItalic.otf"; sourceTree = "<group>"; };
+		274D978A220DF012005AC830 /* Ride-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ride-Regular.otf"; sourceTree = "<group>"; };
+		274D978B220DF019005AC830 /* Ride-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ride-SemiBold.ttf"; sourceTree = "<group>"; };
+		274D978C220DF01D005AC830 /* Ride-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ride-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		274D978F220E1B05005AC830 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		274D9791220E1BDC005AC830 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		274D979F220E2607005AC830 /* BlankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankViewController.swift; sourceTree = "<group>"; };
+		27DA50EA221DE38F000BB667 /* VehiclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewController.swift; sourceTree = "<group>"; };
+		27DA50EC221DE60E000BB667 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		29C56EED2221F53B00556179 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		29C56EF12221F57500556179 /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		29C56EF5222206E400556179 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		29C56EF72222096A00556179 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		29C56EF82222096A00556179 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		29C56EFE222209A300556179 /* VehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTableViewCell.swift; sourceTree = "<group>"; };
+		29C56EFF222209A300556179 /* VehicleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleTableViewCell.xib; sourceTree = "<group>"; };
+		29C56F0A2222393200556179 /* BookingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
+		29C56F0B2222393200556179 /* BookingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingTableViewCell.xib; sourceTree = "<group>"; };
+		7B780B243500AB99B517140A /* Pods_HertzKiosk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HertzKiosk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2AF3D552926DE572652BDAA /* Pods-HertzKiosk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HertzKiosk.release.xcconfig"; path = "Pods/Target Support Files/Pods-HertzKiosk/Pods-HertzKiosk.release.xcconfig"; sourceTree = "<group>"; };
+		E9032F00A7A518C2D78FF214 /* Pods-HertzKiosk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HertzKiosk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HertzKiosk/Pods-HertzKiosk.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		274D976A220DEF65005AC830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73BF8C7EE4DC876C6BE63C79 /* Pods_HertzKiosk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		274D9764220DEF65005AC830 = {
+			isa = PBXGroup;
+			children = (
+				274D976F220DEF65005AC830 /* HertzKiosk */,
+				274D976E220DEF65005AC830 /* Products */,
+				BE4F143FC472A2CB967C44AA /* Pods */,
+				553587FBDC1803F5192CB85E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		274D976E220DEF65005AC830 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				274D976D220DEF65005AC830 /* HertzKiosk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		274D976F220DEF65005AC830 /* HertzKiosk */ = {
+			isa = PBXGroup;
+			children = (
+				29C56EFB2222097500556179 /* TableViewCells */,
+				29C56EEC2221F52200556179 /* Models */,
+				274D979E220E1F8B005AC830 /* Ride */,
+				274D9770220DEF65005AC830 /* AppDelegate.swift */,
+				274D9774220DEF65005AC830 /* Main.storyboard */,
+				274D9777220DEF67005AC830 /* Assets.xcassets */,
+				274D9779220DEF67005AC830 /* LaunchScreen.storyboard */,
+				274D977C220DEF67005AC830 /* Info.plist */,
+				274D978F220E1B05005AC830 /* SplashViewController.swift */,
+				274D9791220E1BDC005AC830 /* LoginViewController.swift */,
+				274D979F220E2607005AC830 /* BlankViewController.swift */,
+				27DA50EA221DE38F000BB667 /* VehiclesViewController.swift */,
+				29C56EF5222206E400556179 /* HomeViewController.swift */,
+			);
+			path = HertzKiosk;
+			sourceTree = "<group>";
+		};
+		274D979E220E1F8B005AC830 /* Ride */ = {
+			isa = PBXGroup;
+			children = (
+				274D9783220DEFCA005AC830 /* Ride-Bold.ttf */,
+				274D9784220DEFD0005AC830 /* Ride-BoldItalic.otf */,
+				274D9785220DEFD6005AC830 /* Ride-Extrabold.otf */,
+				274D9786220DEFDC005AC830 /* Ride-ExtraboldItalic.ttf */,
+				274D9787220DEFE3005AC830 /* Ride-Italic.otf */,
+				274D9788220DEFE8005AC830 /* Ride-Light.ttf */,
+				274D9789220DEFF0005AC830 /* Ride-LightItalic.otf */,
+				274D978A220DF012005AC830 /* Ride-Regular.otf */,
+				274D978B220DF019005AC830 /* Ride-SemiBold.ttf */,
+				274D978C220DF01D005AC830 /* Ride-SemiBoldItalic.ttf */,
+			);
+			path = Ride;
+			sourceTree = "<group>";
+		};
+		29C56EEC2221F52200556179 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				29C56EED2221F53B00556179 /* User.swift */,
+				29C56EF12221F57500556179 /* Booking.swift */,
+				27DA50EC221DE60E000BB667 /* Vehicle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		29C56EFB2222097500556179 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				29C56EF72222096A00556179 /* UserTableViewCell.swift */,
+				29C56EF82222096A00556179 /* UserTableViewCell.xib */,
+				29C56EFE222209A300556179 /* VehicleTableViewCell.swift */,
+				29C56EFF222209A300556179 /* VehicleTableViewCell.xib */,
+				29C56F0A2222393200556179 /* BookingTableViewCell.swift */,
+				29C56F0B2222393200556179 /* BookingTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		553587FBDC1803F5192CB85E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B780B243500AB99B517140A /* Pods_HertzKiosk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE4F143FC472A2CB967C44AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9032F00A7A518C2D78FF214 /* Pods-HertzKiosk.debug.xcconfig */,
+				C2AF3D552926DE572652BDAA /* Pods-HertzKiosk.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		274D976C220DEF65005AC830 /* HertzKiosk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 274D977F220DEF67005AC830 /* Build configuration list for PBXNativeTarget "HertzKiosk" */;
+			buildPhases = (
+				DD52FE483ED90FB8C7769991 /* [CP] Check Pods Manifest.lock */,
+				274D9769220DEF65005AC830 /* Sources */,
+				274D976A220DEF65005AC830 /* Frameworks */,
+				274D976B220DEF65005AC830 /* Resources */,
+				BB4C1F0F2AE6F4120CF743F0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HertzKiosk;
+			productName = HertzKiosk;
+			productReference = 274D976D220DEF65005AC830 /* HertzKiosk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		274D9765220DEF65005AC830 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Haley Ovenhouse";
+				TargetAttributes = {
+					274D976C220DEF65005AC830 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 274D9768220DEF65005AC830 /* Build configuration list for PBXProject "HertzKiosk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 274D9764220DEF65005AC830;
+			productRefGroup = 274D976E220DEF65005AC830 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				274D976C220DEF65005AC830 /* HertzKiosk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		274D976B220DEF65005AC830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274D977B220DEF67005AC830 /* LaunchScreen.storyboard in Resources */,
+				274D9795220E1F16005AC830 /* Ride-Extrabold.otf in Resources */,
+				274D9794220E1F13005AC830 /* Ride-BoldItalic.otf in Resources */,
+				274D979C220E1F28005AC830 /* Ride-SemiBoldItalic.ttf in Resources */,
+				274D9778220DEF67005AC830 /* Assets.xcassets in Resources */,
+				29C56F0D2222393200556179 /* BookingTableViewCell.xib in Resources */,
+				274D9799220E1F20005AC830 /* Ride-LightItalic.otf in Resources */,
+				274D979B220E1F25005AC830 /* Ride-SemiBold.ttf in Resources */,
+				274D9776220DEF65005AC830 /* Main.storyboard in Resources */,
+				274D9797220E1F1B005AC830 /* Ride-Italic.otf in Resources */,
+				274D9798220E1F1E005AC830 /* Ride-Light.ttf in Resources */,
+				29C56EFA2222096A00556179 /* UserTableViewCell.xib in Resources */,
+				274D9793220E1F10005AC830 /* Ride-Bold.ttf in Resources */,
+				29C56F01222209A300556179 /* VehicleTableViewCell.xib in Resources */,
+				274D9796220E1F18005AC830 /* Ride-ExtraboldItalic.ttf in Resources */,
+				274D979A220E1F23005AC830 /* Ride-Regular.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB4C1F0F2AE6F4120CF743F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HertzKiosk/Pods-HertzKiosk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HertzKiosk/Pods-HertzKiosk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD52FE483ED90FB8C7769991 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HertzKiosk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		274D9769220DEF65005AC830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C56F00222209A300556179 /* VehicleTableViewCell.swift in Sources */,
+				27DA50ED221DE60E000BB667 /* Vehicle.swift in Sources */,
+				29C56EF92222096A00556179 /* UserTableViewCell.swift in Sources */,
+				274D9792220E1BDC005AC830 /* LoginViewController.swift in Sources */,
+				274D9771220DEF65005AC830 /* AppDelegate.swift in Sources */,
+				29C56F0C2222393200556179 /* BookingTableViewCell.swift in Sources */,
+				29C56EEE2221F53B00556179 /* User.swift in Sources */,
+				29C56EF6222206E400556179 /* HomeViewController.swift in Sources */,
+				274D9790220E1B05005AC830 /* SplashViewController.swift in Sources */,
+				274D97A0220E2607005AC830 /* BlankViewController.swift in Sources */,
+				27DA50EB221DE38F000BB667 /* VehiclesViewController.swift in Sources */,
+				29C56EF22221F57500556179 /* Booking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		274D9774220DEF65005AC830 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				274D9775220DEF65005AC830 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		274D9779220DEF67005AC830 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				274D977A220DEF67005AC830 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		274D977D220DEF67005AC830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		274D977E220DEF67005AC830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		274D9780220DEF67005AC830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9032F00A7A518C2D78FF214 /* Pods-HertzKiosk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XD57XL4Z9C;
+				INFOPLIST_FILE = HertzKiosk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haleyovenhouse.HertzKiosk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		274D9781220DEF67005AC830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2AF3D552926DE572652BDAA /* Pods-HertzKiosk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XD57XL4Z9C;
+				INFOPLIST_FILE = HertzKiosk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haleyovenhouse.HertzKiosk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		274D9768220DEF65005AC830 /* Build configuration list for PBXProject "HertzKiosk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274D977D220DEF67005AC830 /* Debug */,
+				274D977E220DEF67005AC830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		274D977F220DEF67005AC830 /* Build configuration list for PBXNativeTarget "HertzKiosk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274D9780220DEF67005AC830 /* Debug */,
+				274D9781220DEF67005AC830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 274D9765220DEF65005AC830 /* Project object */;
+}
